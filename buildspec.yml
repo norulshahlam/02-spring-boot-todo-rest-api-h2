@@ -1,5 +1,4 @@
 version: 0.2
-
 phases:
   install:
     runtime-versions:
@@ -11,12 +10,13 @@ phases:
       - echo pre_build
   build:
     commands:
-      - mvn package
+      - mvn clean package
+      - echo $CODEBUILD_SRC_DIR
       - echo build
   post_build:
     commands:
       - echo post_build
-
 artifacts:
   files:
     - target/02-todo-rest-api-h2-0.0.1-SNAPSHOT.jar
+  discard-paths: yes
