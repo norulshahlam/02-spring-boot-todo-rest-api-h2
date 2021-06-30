@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-RestfulWebServicesApplication<02-todo-rest-api-h2>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.in28minutes.rest.webservices.restfulwebservices.RestfulWebServicesApplication",
+      "projectName": "02-todo-rest-api-h2",
+      "args": ""
+    }
+  ]
+}
