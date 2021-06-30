@@ -10,7 +10,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/")
 	public String helloWorld() {
-		return "index pageeeeeeeeeeeee";
+		return "index";
 	}
 
 	@GetMapping(path = "/hello-world-bean")
